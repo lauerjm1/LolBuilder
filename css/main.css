@@ -1,0 +1,51 @@
+/*Theme for LOL Builder*/
+.lolbuild-theme {
+	background-color: #111111;
+	margin: 0 5%;
+	font-family: "Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+}
+
+.navbar-inverse {
+#	background-image: none;
+#	background-color: #383838;
+	background-image: linear-gradient(to bottom, #383838 0%, #303030 100%);
+	padding: 0;
+}
+
+.navbar {
+	margin-top: 2%;
+	padding: 0.5em 2em;
+}
+
+.navbar-nav{
+	border-color: #191919;
+	border-style: solid;
+	border: 2px;
+}
+
+.main-content {
+	background-color: #333333;
+   background: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0, #333333), color-stop(1.0, #232323));
+	margin-bottom: 20px;
+    padding: 10px;
+    font-size: 14px;
+    color: #AAA;
+	box-shadow: 0 0 5px #000000;
+    border-radius: 6px 6px 6px 6px;
+  
+    overflow: hidden;
+}
+
+.inner-pane {
+	padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 2px ;
+    overflow: hidden;
+    position: relative;
+    background: rgb(26, 26, 26);
+}
+
+.title {
+	color: #FFCD03;
+}
