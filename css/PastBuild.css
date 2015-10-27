@@ -3,3 +3,11 @@
   padding-left: 0px;
 background-color: #333333;
 }
+
+.buildList img {
+	width: 70%;
+	height: 70%; 
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
