@@ -36,3 +36,16 @@ height: 80%;
 width: auto;
 
 }
+
+#itemSelect{
+	height: 10em;
+	overflow: scroll;
+
+
+}
+#itemSelect img{
+
+height: 80%;
+width: auto;
+
+}

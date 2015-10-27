@@ -13,14 +13,11 @@ Object.getOwnPropertyNames(champsJSONobject.data).forEach(function(val, idx, arr
   champs.push(val);
 });
 
-var items = ["A", "Volvo", "BMW"];
 var buttonsC = [];
 
 var champLength = champs.length;
 
-var itemLength = items.length;
 var currentChamp;
-var currentItem;
 
 for (var i = 0; i < champs.length; i++) {
 	var img = document.createElement("img");
