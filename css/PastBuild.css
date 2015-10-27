@@ -11,3 +11,9 @@ background-color: #333333;
     margin-left: auto;
     margin-right: auto
 }
+
+.pastbuildbutton img {
+    height: 5em;
+    width: auto;
+    float: left;
+}
