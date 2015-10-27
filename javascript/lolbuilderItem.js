@@ -34,7 +34,7 @@ for (var i = 0; i < buttonsI.length; i++) {
 	buttonsI[i].onclick = function (i) {
 		return function(){
 		currentitem = items[i];
-		document.images["Champ2"].src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + items[i] + ".png";
+		document.getElementById("Champ2").src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + items[i] + ".png";
 		}
 		
 		
