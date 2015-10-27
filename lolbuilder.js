@@ -35,13 +35,16 @@ for (var i = 0; i < champs.length; i++) {
 
 
 for (var i = 0; i < buttonsC.length; i++) {
-	buttonsC[i].onclick = changecurrentC(i);
+	buttonsC[i].onclick = function () {
+		currentChamp = champs[i];
+		document.images["Champ"].src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/champion/" + champs[i] + ".png";
+		
+		
+	}
 	
 	
 	
 }
 
-function changecurrentC(i) {
-    currentChamp = champs[i];
-}
+
 }
