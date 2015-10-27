@@ -6,8 +6,6 @@
 }
 
 .navbar-inverse {
-#	background-image: none;
-#	background-color: #383838;
 	background-image: linear-gradient(to bottom, #383838 0%, #303030 100%);
 	padding: 0;
 }
