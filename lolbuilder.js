@@ -1,4 +1,17 @@
-var champs = ["Ahri", "Thresh", "Janna"];
+var a = new XMLHttpRequest();
+var champsJSONobject;
+a.open("GET", "https://global.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=6bd5695e-29ee-4aef-a98a-a514b1c4dfad", true);
+a.send();
+a.onreadystatechange = function() {
+  if (a.readyState == 4 && a.status == 200) {
+	champsJSONobject = JSON.parse(a.responseText);
+  }
+
+
+var champs = [];
+Object.getOwnPropertyNames(champsJSONobject.data).forEach(function(val, idx, array) {
+  champs.push(val);
+});
 
 var items = ["A", "Volvo", "BMW"];
 var buttonsC = [];
@@ -9,9 +22,10 @@ var itemLength = items.length;
 var currentChamp;
 var currentItem;
 
-for (var i = 0; i < 30; i++) {
+for (var i = 0; i < champs.length; i++) {
 	var img = document.createElement("img");
-	img.src = "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/champion/Aatrox.png" ;
+	console.log(champs[i]);
+	img.src = "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/champion/" + champs[i] + ".png";
 
 	var src = document.getElementById("champSelect");
 	src.appendChild(img);
@@ -29,4 +43,5 @@ for (var i = 0; i < buttonsC.length; i++) {
 
 function changecurrentC(i) {
     currentChamp = champs[i];
+}
 }
