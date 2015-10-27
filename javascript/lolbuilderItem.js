@@ -39,10 +39,63 @@ for (var i = 0; i < buttonsI.length; i++) {
 		
 		
 	}(i);
-	
-	
-	
 }
+	
+	
+	
+document.images["Slot1"].onclick = function (i) {
+		return function(){
+		
+		document.images["Slot1"].src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		}
+		
+		
+	}(i);
+	
+document.images["Slot2"].onclick = function (i) {
+		return function(){
+		
+		document.images["Slot2"].src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		}
+		
+		
+	}(i);
 
+document.images["Slot3"].onclick = function (i) {
+		return function(){
+		
+		document.images["Slot3"].src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		}
+		
+		
+	}(i);
+	
+document.images["Slot4"].onclick = function (i) {
+		return function(){
+		
+		document.images["Slot4"].src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		}
+		
+		
+	}(i);
+	
+
+document.images["Slot5"].onclick = function (i) {
+		return function(){
+		
+		document.images["Slot5"].src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		}
+		
+		
+	}(i);
+	
+document.images["Slot6"].onclick = function (i) {
+		return function(){
+		
+		document.images["Slot6"].src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		}
+		
+		
+	}(i);
 
 }
