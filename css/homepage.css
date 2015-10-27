@@ -1,12 +1,8 @@
 .welcome-box {
 }
 
-.signup-form {
-	
-}
-
 .signup {
-	
+	float: right;
 }
 
 .login {
@@ -14,4 +10,8 @@
 }
 
 .homepage-main-content{
+}
+
+.signup-form  input{
+	float: right;
 }
