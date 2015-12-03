@@ -47,6 +47,8 @@ for (var i = 0; i < buttonsI.length; i++) {
 		return function(){
 		
 		document.getElementById("slot1").src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		
+		document.getElementById("item1").value= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
 		}
 		
 		
@@ -56,6 +58,8 @@ for (var i = 0; i < buttonsI.length; i++) {
 		return function(){
 		
 		document.getElementById("slot2").src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		
+		document.getElementById("item2").value= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
 		}
 		
 		
@@ -65,6 +69,8 @@ for (var i = 0; i < buttonsI.length; i++) {
 		return function(){
 		
 		document.getElementById("slot3").src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		
+		document.getElementById("item3").value= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
 		}
 		
 		
@@ -73,6 +79,8 @@ for (var i = 0; i < buttonsI.length; i++) {
 		return function(){
 		
 		document.getElementById("slot4").src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		
+		document.getElementById("item4").value= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
 		}
 		
 		
@@ -81,6 +89,8 @@ for (var i = 0; i < buttonsI.length; i++) {
 		return function(){
 		
 		document.getElementById("slot5").src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		
+		document.getElementById("item5").value= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
 		}
 		
 		
@@ -89,6 +99,8 @@ for (var i = 0; i < buttonsI.length; i++) {
 		return function(){
 		
 		document.getElementById("slot6").src= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
+		
+		document.getElementById("item6").value= "http://ddragon.leagueoflegends.com/cdn/5.21.1/img/item/" + currentitem + ".png";
 		}
 		
 		
