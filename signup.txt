@@ -1,0 +1,13 @@
+<?php
+	if ($_SERVER["REQUEST_METHOD"] == "POST")
+	{
+		if (isset($_POST["emailsignup"]))
+		{
+			$inputEmail = $_POST['emailsignup'];
+			if (!($inputEmail === ""))
+			{
+				
+			}
+		}
+	}
+?>
