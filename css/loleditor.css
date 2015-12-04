@@ -10,17 +10,17 @@
 	
 }
 .character img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
 .items img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
 .lolbuild img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -60,6 +60,6 @@ width: auto;
 #inventory img{
 
 height: auto;
-width: 30%;
+width: 40%;
 
 }

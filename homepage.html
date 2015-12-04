@@ -62,11 +62,11 @@
 				<div class="col-sm-4 signup-form main-content homepage-main-content">
 					<h2 class="title">Sign Up</h2>
 					<div class="inner-pane">
-						<form  method ="get" action="http://www.randyconnolly.com/tests/process.php" autocomplete="on">
-							<p> 
+						<form  method ="post" action="signup.php" autocomplete="on">
+<!-- 							<p> 
 								<label for="usernamesignup" class="uname" data-icon="u">Username</label>
 								<input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder=""/>
-							</p>
+							</p> -->
 							<p> 
 								<label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
 								<input id="emailsignup" name="emailsignup" required="required" type="email" /> 
@@ -80,7 +80,7 @@
 								<input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder=""/>
 							</p>
 							<p>
-						<button type="submit" class="btn btn-default signup">Create Account!</button>
+						<button type="submit" id="signupbutton" class="btn btn-default signup">Create Account!</button>
 							</p>
 						</form>
 					</div>

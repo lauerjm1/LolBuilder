@@ -35,7 +35,8 @@
 	  echo '<img src='.$row['item4Img'].' alt='.$row['item4Img'].'></img>';
 	  echo '<img src='.$row['item5Img'].' alt='.$row['item5Img'].'></img>';
 	  echo '<img src='.$row['item6Img'].' alt='.$row['item6Img'].'></img>';
-	  echo "<input type='submit' name='buildID' value='".$row['BuildID']."'></input>";
+	echo '<input type="hidden" id="image6" name="buildID" value=' .$row["BuildID"] .'>';
+	  echo "<input type='submit' value='Edit'></input>";
 	  echo '</form>';
 	  echo '</div>';
    }

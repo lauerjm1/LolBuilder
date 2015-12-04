@@ -33,9 +33,14 @@
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="?">Create New Build</a></li>
-						<li><a href="PastBuild.html">Past Builds</a></li>
-<!-- 						<li><a href="#">User Guide</a></li> -->
+						<li><form method="post" action="newbuild.php" >
+							
+						<button type="submit" class="btn btn-default navbar-btn">New Build</button>
+					</form></li>
+						<li><form method="post" action="BackToTheFuture.php" >
+							
+						<button type="submit" class="btn btn-default navbar-btn">Past Builds</button>
+					</form></li>
 					</ul>				  
 				</div>
 			</div>
@@ -67,19 +72,17 @@
 					<div class="col-sm-6 main-content lolbuild">
 						<p>items in build </p>
 						<?php
-						
-						if (!$_SESSION["build"]){
+						echo $_SESSION["build"];
+						if ($_SESSION["build"] == "new"){
 						 echo '<img id="Champ" src="images/inventory.png" alt="javascript button">';
-								echo '<input type="hidden" id="champion" value="NULL">';
 						} else{
 							echo '<img id="Champ" src=' .$_SESSION["champ"] .'  alt="javascript button">';
-								echo '<input type="hidden" id="champion" value='.$_SESSION['champ'].'>';
 						}
 						?>
 						<div id="inventory">
 						<?php
 						 
-							if (!$_SESSION["build"]){
+							if ($_SESSION["build"] == "new" ){
 								
 							
 								echo '<img id="slot1" src="images/Slot.png" alt="javascript button">';
@@ -88,12 +91,6 @@
 								echo '<img id="slot4" src="images/Slot.png" alt="javascript button">';
 								echo '<img id="slot5" src="images/Slot.png" alt="javascript button">';
 								echo '<img id="slot6" src="images/Slot.png" alt="javascript button">';
-								echo '<input type="hidden" id="image1" name="image1" value="NULL">';
-								echo '<input type="hidden" id="image2" name="image2" value="NULL">';
-								echo '<input type="hidden" id="image3" name="image3" value="NULL">';
-								echo '<input type="hidden" id="image4" name="image4" value="NULL">';
-								echo '<input type="hidden" id="image5" name="image5" value="NULL">';
-								echo '<input type="hidden" id="image6" name="image6" value="NULL">';
 							} else{
 								echo '<img id="slot1" src=' .$_SESSION["item1"] .'  alt="javascript button">';
 								echo '<img id="slot2" src=' .$_SESSION["item2"] .' alt="javascript button">';
@@ -101,12 +98,6 @@
 								echo '<img id="slot4" src=' .$_SESSION["item4"] .' alt="javascript button">';
 								echo '<img id="slot5" src=' .$_SESSION["item5"] .' alt="javascript button">';
 								echo '<img id="slot6" src=' .$_SESSION["item6"] .' alt="javascript button">';
-								echo '<input type="hidden" id="image1" name="image1" value=' .$_SESSION["item1"] .'>';
-								echo '<input type="hidden" id="image2" name="image2" value=' .$_SESSION["item2"] .'>';
-								echo '<input type="hidden" id="image3" name="image3" value=' .$_SESSION["item3"] .'>';
-								echo '<input type="hidden" id="image4" name="image4" value=' .$_SESSION["item4"] .'>';
-								echo '<input type="hidden" id="image5" name="image5" value=' .$_SESSION["item5"] .'>';
-								echo '<input type="hidden" id="image6" name="image6" value=' .$_SESSION["item6"] .'>';
 								
 							}
 							?>
@@ -123,10 +114,29 @@
 						<img id="Champ2" src="images/inventory.png" alt="javascript button">
 					</div>
 					<div>
-					
-					<img id="saveBuild" src="images/save.png" alt="javascript button">
-					
-					
+					<form method="post" action="changeDB.php">
+					<?php
+						 
+							if (!$_SESSION["build"]){
+								echo '<input type="hidden" id="champion" value="NULL">';
+								echo '<input type="hidden" id="image1" name="image1" value="NULL">';
+								echo '<input type="hidden" id="image2" name="image2" value="NULL">';
+								echo '<input type="hidden" id="image3" name="image3" value="NULL">';
+								echo '<input type="hidden" id="image4" name="image4" value="NULL">';
+								echo '<input type="hidden" id="image5" name="image5" value="NULL">';
+								echo '<input type="hidden" id="image6" name="image6" value="NULL">';
+							} else{
+								echo '<input type="hidden" id="champion" name="champion" value='.$_SESSION['champ'].'>';
+								echo '<input type="hidden" id="image1" name="image1" value=' .$_SESSION["item1"] .'>';
+								echo '<input type="hidden" id="image2" name="image2" value=' .$_SESSION["item2"] .'>';
+								echo '<input type="hidden" id="image3" name="image3" value=' .$_SESSION["item3"] .'>';
+								echo '<input type="hidden" id="image4" name="image4" value=' .$_SESSION["item4"] .'>';
+								echo '<input type="hidden" id="image5" name="image5" value=' .$_SESSION["item5"] .'>';
+								echo '<input type="hidden" id="image6" name="image6" value=' .$_SESSION["item6"] .'>';
+							}
+					?>
+					<input type="image" name="submit" src="images/save.png" alt="Save" />
+					</form>
 					</div>
 					
 				</div>

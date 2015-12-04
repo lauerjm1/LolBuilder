@@ -1,6 +1,5 @@
 
 		<?php
-		session_start();
 		$_SESSION["test"] = "hi";
 		include "DisplayPastBuilds.php";
 		?>
@@ -36,9 +35,14 @@
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="loleditor.html">Create New Build</a></li>
-						<li><a href="?">Past Builds</a></li>
-<!-- 						<li><a href="#">User Guide</a></li> -->
+						<li><form method="post" action="newbuild.php" >
+							
+						<button type="submit" class="btn btn-default navbar-btn">New Build</button>
+					</form></li>
+						<li><form method="post" action="BackToTheFuture.php" >
+							
+						<button type="submit" class="btn btn-default navbar-btn">Past Builds</button>
+					</form></li>
 					</ul>				  
 				</div>
 			</div>
