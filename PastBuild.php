@@ -20,8 +20,8 @@
 	
 	<body class="lolbuild-theme">
 		<!-- Navigation Bar -->
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
+		<nav class="navbar navbar-inverse" style="padding-left: 0;padding-right: 0;width: 97.5%;margin: auto;margin-top: 2%;margin-bottom: 2%;">
+			<div class="container-fluid" >
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
